@@ -1,2 +1,2 @@
 ## Welcome!
-This is my website :)
+This is my website!
