@@ -1,7 +1,8 @@
 import { Container, Box, Heading, Image, useColorModeValue } from '@chakra-ui/react'
 import Section from '@/components/section'
 import Paragraph from '@/components/paragraph'
-
+import NextLink from 'next/link'
+import React from 'react';
 export default function Home() {
   return (
     <Container>
@@ -34,7 +35,7 @@ export default function Home() {
           />
         </Box>
       </Box>
-      <Section delay={0.1}>
+      <Section delay={0.2}>
         <Heading as='h3' variant='section-title'>
           Work
         </Heading>
@@ -42,6 +43,7 @@ export default function Home() {
           Babe is a freelance and full-stack developer based in Brooklyn, New York with a passion for building digital solutions, and collaboration.
           He has a knack for problem solving, music and technology. From planning and designing to debugging and launching, he respects the journey of each coding project.
           When not in the codezone, he loves to write and record music in a plethora of genres. Currently, he is building more projects and learning Next.js to add to his repertoire.
+          <NextLink href='/works'>Works</NextLink>
         </Paragraph>
       </Section>
     </Container>
