@@ -3,7 +3,6 @@ import Section from '@/components/section'
 import Paragraph from '@/components/paragraph'
 import NextLink from 'next/link'
 import React from 'react';
-import Link from 'next/link';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { BioSection, BioYear } from '@/components/bio';
 
