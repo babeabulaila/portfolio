@@ -45,7 +45,7 @@ export default function Home() {
         <Paragraph>
           Babe is a first generation American full-stack developer based in Brooklyn, New York with a passion for building digital solutions, and collaboration.
           He has a knack for problem solving, music and technology. From planning and designing to debugging and launching, he respects the journey of each coding project.
-          When not in the codezone, he loves to write and record music in a plethora of genres. Currently, he is building more projects and learning Next.js to add to his repertoire.
+          When not in the codezone, he loves to write and record music in a plethora of genres. Currently, he is building more projects and learning Next.js to add to his repertoire!
         </Paragraph>
         <Box align='center' my={4}>
           <NextLink href='/works'>
