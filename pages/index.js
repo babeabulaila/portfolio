@@ -50,7 +50,7 @@ export default function Home() {
         <Box align='center' my={4}>
           <NextLink href='/works'>
             <Button rightIcon={<ChevronRightIcon marginTop={1.4} />} colorScheme='teal' >
-              My Portfolio
+              My Portfolio 
             </Button>
           </NextLink>
         </Box>
