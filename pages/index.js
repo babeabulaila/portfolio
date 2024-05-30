@@ -52,6 +52,7 @@ export default function Home() {
               alt="Profile Picture"
               boxShadow="5px 5px 5px #2d2d2e"
             />
+            <p><small>He/They</small></p>
           </Box>
         </Box>
         <Section delay={0.2}>
