@@ -27,8 +27,6 @@ export const CatContainer = forwardRef(({ children }, ref) => (
   </Box>
 ));
 
-CatContainer.displayName = 'CatContainer'; 
-
 const Loader = () => {
   return (
     <CatContainer>
