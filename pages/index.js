@@ -32,6 +32,7 @@ export default function Home() {
             <Heading as="h2" variant="page-title">
               Babe Abulaila
             </Heading>
+
             <p> (Developer / Musician / Cat-Lover)</p>
           </Box>
           <Box
