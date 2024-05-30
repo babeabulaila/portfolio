@@ -20,6 +20,10 @@ const Main = ({ children, router }) => {
         <meta name="author" content="Babe Abulaila" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <meta property="og:site_name" content="Babe Abulaila" />
+        <meta name="og:title" content="Babe Abulaila" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://sketchfab.com/3d-models/voxel-lucky-cat-9635b45c72e748009a62ea7e562bbf27" />
         <title>Babe Abulaila - Homepage</title>
       </Head>
 
