@@ -12,10 +12,6 @@ const VoxelCat = () => {
   const refContainer = useRef();
   const [loading, setLoading] = useState(true);
   const refRenderer = useRef();
-  const urlCatGLB =
-    (process.env.NODE_ENV === "production"
-      ? "https://sketchfab.com/3d-models/voxel-lucky-cat-9635b45c72e748009a62ea7e562bbf27"
-      : "") + "/cat.glb";
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer;
@@ -76,7 +72,7 @@ const VoxelCat = () => {
       controls.autoRotate = true;
       controls.target = target;
 
-      loadGLTFModel(scene, urlCatGLB, {
+      loadGLTFModel(scene, "/cat.glb", {
         receiveShadow: false,
         castShadow: false,
       }).then(() => {
