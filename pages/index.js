@@ -1,18 +1,23 @@
 import {
+  Button,
   Container,
   Box,
   Heading,
   Image,
+  Link,
   useColorModeValue,
-  Button,
+  List,
+  ListItem,
+  Icon,
 } from "@chakra-ui/react";
 import Section from "@/components/section";
 import Paragraph from "@/components/paragraph";
+import Layout from "@/components/layouts/article";
 import NextLink from "next/link";
 import React from "react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { BioSection, BioYear } from "@/components/bio";
-import Layout from "@/components/layouts/article";
+import { IoLogoGithub, IoLogoLinkedin, IoLogoSteam } from "react-icons/io5";
 
 export default function Home() {
   return (
@@ -52,7 +57,9 @@ export default function Home() {
               alt="Profile Picture"
               boxShadow="5px 5px 5px #2d2d2e"
             />
-            <p><small>He/They</small></p>
+            <p>
+              <small>He/They</small>
+            </p>
           </Box>
         </Box>
         <Section delay={0.2}>
@@ -111,6 +118,54 @@ export default function Home() {
             Cats, Star Trek, music, food, language, cats, playing guitar and
             bass, hiking, cats
           </Paragraph>
+        </Section>
+        <Section delay={0.8}>
+          <Heading as="h3" variant="section-title">
+            On the web
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/babeabulaila" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  - Github
+                </Button>
+              </Link>
+            </ListItem>
+
+            <ListItem>
+              <Link
+                href="https://www.linkedin.com/in/babe-abulaila/"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoLinkedin} />}
+                >
+                  - LinkedIn
+                </Button>
+              </Link>
+            </ListItem>
+
+            <ListItem>
+              <Link
+                href="https://steamcommunity.com/id/babeabulaila/"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoSteam} />}
+                >
+                  - Steam
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>

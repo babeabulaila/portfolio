@@ -64,7 +64,7 @@ const VoxelCat = () => {
       camera.position.copy(initialCameraPosition);
       camera.lookAt(target);
 
-      const dirLight = new THREE.DirectionalLight(0xefefff, 7.5);
+      const dirLight = new THREE.DirectionalLight(0xffffff, 15);
       dirLight.position.set(10, 10, 10);
       scene.add(dirLight);
 
